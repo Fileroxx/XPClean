@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(46deg, #30febb, #4551b8);
+
+}
+
+
+.logo {
+    text-align: center;
+    padding: 10px;
+}
+
+
+.logo img {
+    width: 45%;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.video {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -8em;
+}
+
+.video video {
+    width: 35%;
+    box-shadow: 1px 5px 50px;
+    border-radius: 20px;
+}
+
+.descricao {
+    text-align: center;
+}
+
+.descricao h2 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.descricao p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.links a {
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+
+.links input {
+    width: 50%;
+    background: #0077ff;
+    color: #fff;
+    height: 5vh;
+    border-style: none;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+
+.links input:last-child {
+    margin-bottom: 50px;
+}
+
+.links input:hover {
+    background: #161616;
+    border-style: none;
+    transform: scale(1.1);
+    transition: ease all .2s;
+}
+
+
+
+@media (max-width: 458px) {
+  
+    .video {
+        margin-top: -5em;
+    }
+
+    .video video {
+        width: 80%;
+    }
+    
+    .links input {
+        width: 90%;
+        height: 8vh;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .links input:last-child {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+    .links input:last-child {
+        margin-bottom: 30px;
+        height: 8vh;
+    }
+
+    .video {
+        margin-top: -3em;
+
+    }
+
+    .video video {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .links input {
+    
+        height: 8vh;
+    }
+}
